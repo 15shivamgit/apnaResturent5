@@ -1,0 +1,716 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+.icon{
+    position: relative;
+    top: 0px;
+    left: 100px;
+}
+.icon i{
+    background-color: transparent;
+    color: #5fb609;
+}
+.index {
+    height: 100%;
+    width: 100%;
+    background-image: url("a.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    z-index: -5;
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(00, 00, 00, 0.6);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+.navbar div{
+    height: 40px;
+    width: 70px;
+    text-align: center;
+    align-content: center;
+    border: 1px solid transparent;
+    border-radius: 12px;
+}
+.navbar div a{
+    text-decoration: none;
+}
+.navbar #book{
+    width: 150px;
+    height: 50px;
+    border: 2px solid #7c7e0a;
+    border-radius: 25px;
+    text-align: center;
+    align-content: center;
+}
+.navbar div:hover{
+    color: #e8eb34;
+    border: 2px solid #e8eb34;
+}
+.navbar #book:hover{
+    color: #ffffff;
+    background-color: #7c7e0a;
+}
+.name{
+    height: 500px;
+    width: 800px;
+    position: relative;
+    left: 100px;
+    top: 200px;
+}
+.name #wel{
+    display: inline-block;
+    font-size: 50px;
+    color: #ffffff;
+}
+.name #apna{
+    display: inline-block;
+    font-size: 50px;
+    color: #cda45e;
+    margin-left: 10px;
+}
+.name #food{
+    font-size: 25px;
+}
+.name button{
+    margin-top: 50px;
+    margin-left: 25px;
+    width: 120px;
+    height: 40px;
+    border: 2px solid #7c7e0a;
+    border-radius: 20px;
+    background-color: transparent;
+}
+.name button a{
+    text-decoration: none;
+}
+.name button:hover{
+    background-color: #7c7e0a;
+}
+#about{
+    width: 100%;
+    height: 800px;
+    background-color: rgba(00, 00, 00, 0.6);
+    position: relative;
+    top: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#about #text{
+    width: 40%;
+    height: 80%;
+    margin-top: 80px;
+}
+#about #text li{
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 20px;
+}
+#about #text p{
+    font-weight: 800;
+    margin-top: 10px;
+}
+#about #imgA{
+    width: 40%;
+    height: 80%;    
+    margin-top: 80px;
+    border-radius: 50px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    background-image: url("aboutimg.jpg");
+    background-size: cover;
+    transition: all 0.2s ease;
+}
+#about #imgA:hover{
+    transform: scale(1.2);
+}
+#rest{
+    width: 100%;
+    height: 600px;   
+    padding: 60px 0;
+    background-color: rgba(00, 00, 00, 0.8);
+    position: relative;
+    top: 500px;
+}
+#rest h1{
+    color: #d88e03; 
+}
+#rest div{
+    height: 60%;
+    width: 25%;
+    margin: 50px 30px;
+    display: inline-block;
+    background-color: #131312;
+    transition: all 2s linear;
+}
+#rest div h1{
+    margin: 25px 10px;
+}
+#rest div h3{
+    margin: 25px 10px;
+}
+#rest div p{
+    margin: 25px 10px;
+}
+#rest div:hover,::before{
+    font-size: 18px;
+    background-color: #72740a;
+}
+#menu{
+    width: 100%;
+    height: 1000px;
+    background-color: rgba(00, 00, 00, 0.4);
+    position: relative;
+    top: 600px;
+}
+#menu #extra{
+    width: 100%;
+    height: 100px;
+}
+#menu h1{
+    color: #d88e03;
+    margin-left: 100px;
+}
+#menu #search{
+    width: 50%;
+    height: 50px;
+    font-size: 25px;
+    border-bottom: 2px solid #72740a;
+    margin: 20px 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#menu #search a:hover{
+    color: #72740a;
+}
+#menu #search a{
+    text-decoration: none;
+}
+#menu .b1{
+    width: 40%;
+    height: 10%;
+    display: inline-block;
+    margin-left: 50px;
+}
+#menu .b2{
+    width: 36%;
+    height: 13%;
+    display: inline-block;
+    margin: 10px 50px;
+}
+#menu .a1{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: inline-block;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    background-image: url("litti.jpg");
+    background-size: cover;
+}
+#menu .a2{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    background-image: url("paneer.jpg");
+    background-size: cover;
+    display: inline-block;
+}
+#menu .a3{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    background-image: url("lolipop.jpg");
+    background-size: cover;
+}
+#menu .a4{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    background-image: url("chiken.jpeg");
+    background-size: cover;
+}
+#menu .a5{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    background-image: url("biryani.jpeg");
+    background-size: cover;
+}
+#menu .a6{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    background-image: url("cake.jpeg");
+    background-size: cover;
+}
+#menu .a7{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    background-image: url("sweets.jpeg");
+    background-size: cover;
+}
+#menu .a8{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    background-image: url("chocolate.webp");
+    background-size: cover;
+}
+#events{
+    width: 100%;
+    height: 900px;
+    background-color: rgba(00, 00, 00, 0.8);
+    position: relative;
+    top: 580px;
+}
+#events p{
+    margin: 20px 20px;
+    color: #aaaaaa;
+}
+#events h1{
+    color: #7c7e0a;
+    margin: 80px 20px;
+}
+#events #photo-event{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#events #photo-event #child1{
+    height: 40%;
+    width: 40%;
+    font-size: 35px;
+    border-radius: 30px;
+    background-image: url("event1.jpg");
+    background-size: cover;
+    animation: animate 2s linear 0s infinite alternate;
+}
+#events #photo-event #child2{
+    height: 40%;
+    width: 40%;
+    border-radius: 30px;
+    color: #7c7e0a;
+    font-size: 35px;
+    background-image: url("event2.jpg");
+    background-size: cover;
+    animation: animate 2s ease-in-out 0s infinite alternate;
+}
+#events #photo-event #child3{
+    height: 40%;
+    width: 40%;
+    border-radius: 30px;
+    background-image: url("event3.jpg");
+    background-size: cover;
+    animation: animate 2s ease-out 0s infinite alternate;
+}
+#events #photo-event #child4{
+    height: 40%;
+    width: 40%;
+    border-radius: 30px;
+    background-image: url("event4.jpg");
+    background-size: cover;
+    animation: animate 2s ease-in 0s infinite alternate;
+}
+@keyframes animate{
+    0%{
+        transform: scale(1);
+        color: #7c7e0a;
+    }
+    50%{
+        transform: scale(1.1);
+        color: #727404;
+    }
+    100%{
+        transform: scale(1.2);
+        color: #d0d30d;
+    }
+}
+#gallery{
+    height: 1000px;
+    width: 100%;
+    background-color: rgba(22, 20, 20, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    top: 580px;
+}
+#gallery .box1{
+     width: 25%;
+     height: 35%;
+     border-radius: 35px;
+     background-image: url("i9.jpg");
+     background-size: cover;
+     transition: all 0.3s ease-out;
+}
+#gallery .box2{
+    width: 25%;
+    height: 35%;
+    border-radius: 35px;
+    background-image: url("i8.jpg");
+    background-size: cover;
+    transition: all 0.3s ease-out;
+}
+#gallery .box3{
+     width: 25%;
+     height: 35%;
+     border-radius: 35px;
+     background-image: url("abhishek3.jpg");
+     background-size: cover;
+     transition: all 0.3s ease-out;
+}
+#gallery .box4{
+     width: 25%;
+     height: 35%;
+     border-radius: 35px;
+     background-image: url("i6.jpg");
+     background-size: cover;
+     transition: all 0.3s ease-out;
+}
+#gallery .box5{
+     width: 25%;
+     height: 35%;
+     border-radius: 35px;
+     background-image: url("i5.jpg");
+     background-size: cover;
+     transition: all 0.3s ease-out;
+}
+#gallery .box6{
+     width: 25%;
+     height: 35%;
+     border-radius: 35px;
+     background-image: url("abhishi.jpg");
+     background-size: cover;
+     transition: all 0.3s ease-out;
+}
+#gallery .box7{
+     width: 25%;
+     height: 35%;
+     border-radius: 35px;
+     background-image: url("i2.jpg");
+     background-size: cover;
+     transition: all 0.3s ease-out;
+}
+#gallery .box8{
+     width: 25%;
+     height: 35%;
+     border-radius: 35px;
+     background-image: url("i3.jpg");
+     background-size: cover;
+     transition: all 0.3s ease-out;
+}
+#gallery div:hover{
+    transform: scale(1.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+#content{
+    width: 100%;
+    height: 1000px;
+    background-color: #0c0b09;
+    position: relative;
+    top: 600px;
+}
+#content #abc1{
+    color: #aaaaaa;
+    font-size: 20px;  
+}
+#content h1{
+    color: #cda45e;
+    font-size: 40px;
+    margin-top: 50px;
+}
+#content .detail{
+    width: 100%;
+    height: 600px;
+}
+#content .detail div{
+    height: 70px;
+    width: 40%;
+    margin: 10px 50px;
+}
+#content .detail h3{
+    display: inline-block;
+    margin-left: 10px;
+}
+#content .detail p{
+    margin-left: 50px;
+}
+#content div i{
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    border-radius: 100%;
+    background-color: #727404;
+    text-align: center;
+    align-content: center;
+}
+#content .detail .contectmess{
+    width: 600px;
+    height: 500px;
+    display: inline-block;
+    position: relative;
+    left: 650px;
+    bottom: 300px;
+}
+#content .detail .contectmess #inputname{
+    height: 35px;
+    width: 280px;
+    font-size: 16px;
+    color: #554a4a;
+    padding: 0 12px;
+    background-color: transparent;
+    border: 1px solid #554a4a;
+}
+#content .detail .contectmess #inputnumber{
+    height: 35px;
+    width: 280px;
+    font-size: 16px;
+    color: #554a4a;
+    padding: 0 12px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: 1px solid #554a4a;
+}
+#content .detail .contectmess #inputsubject{
+    height: 35px;
+    width: 620px;
+    font-size: 16px;
+    color: #554a4a;
+    padding: 0 12px;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid #554a4a;
+}
+#content .detail .contectmess textarea{
+    height: 100px;
+    width: 620px;
+    font-size: 20px;
+    color: #554a4a;
+    padding: 20px 20px;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid #554a4a;
+}
+#content .detail .contectmess button{
+    height: 35px;
+    width: 150px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background-color: #72740a;
+    margin: 20px 200px;
+}
+#booktable{
+    width: 100%;
+    height: 850px;
+    background-color: #0c0b09;
+    position: relative;
+    top: 500px;
+}
+#booktable #mainform{
+    width: 100%;
+    height: 60%;
+    padding: 100px 50px;
+}
+#booktable #formp{
+    color:#aaaaaa;
+    font-size: 20px;
+}
+#booktable #formh{
+    color:#cda45e;
+    font-size: 40px;
+    margin-top: 50px;
+}
+#booktable #form1{
+    width: 30%;
+    height: 40px;
+    font-size: 16px;
+    padding: 6px 12px;
+    border: 1px solid #554a4a;
+    background-color: #0c0b09;
+}
+#booktable #form2{
+    width: 30%;
+    height: 40px;
+    font-size: 16px;
+    padding: 6px 12px;
+    margin-left: 20px;
+    border: 1px solid #554a4a;
+    background-color: #0c0b09;
+}
+#booktable #form3{
+    width: 30%;
+    height: 40px;
+    font-size: 16px;
+    padding: 6px 12px;
+    margin-left: 20px;
+    border: 1px solid #554a4a;
+    background-color: #0c0b09;
+}
+#booktable #form4{
+    width: 30%;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 6px 12px;
+    border: 1px solid #554a4a;
+    background-color: #0c0b09;
+}
+#booktable #form5{
+    width: 30%;
+    height: 40px;
+    font-size: 16px;
+    padding: 6px 12px;
+    margin: 20px 20px;
+    border: 1px solid #554a4a;
+    background-color: #0c0b09;
+}
+#booktable #form6{
+    width: 30%;
+    height: 40px;
+    font-size: 16px;
+    padding: 6px 12px;
+    margin: 20px 5spx;
+    border: 1px solid #554a4a;
+    background-color: #0c0b09;
+}
+#booktable #form7{
+    width: 30%;
+    height: 40px;
+    font-size: 16px;
+    padding: 6px 12px;
+    margin-top: 10px;
+    border: 1px solid #554a4a;
+    background-color: #0c0b09;
+}
+#booktable #form8{
+    width: 100%;
+    height: 140px;
+    font-size: 16px;
+    padding: 6px 12px;
+    margin-top: 10px;
+    color: #554a4a;
+    border: 1px solid #554a4a;
+    background-color: #0c0b09;
+}
+#booktable #form9{
+    width: 120px;
+    height: 35px;
+    font-size: 16px;
+    padding: 6px 12px;
+    margin: 20px 50%;
+    border: 1px solid #554a4a;
+    border-radius: 15px;
+    background-color: #72740a;
+}
+.footer{
+    width: 100%;
+    height: 400px;
+    background-color: #0c0b09;
+    border-top: 2px solid #222218;
+    border-bottom: 2px solid #222218;
+    position: relative;
+    top: 500px;
+    display: flex;
+    justify-content: center;
+}
+.footer div{
+    width: 20%;
+    height: 300px;
+    display: inline-block;
+}
+.footer #foot1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer #foot1 li i{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    align-content: center;
+    border-radius: 100%;
+    color: #ffffff;
+    background-color: #727404;
+}
+.footer #foot2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer #foot2 li a{
+    text-decoration: none;
+}
+.footer #foot3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer #foot4 h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: #72740a;
+    margin: 10px 50px;
+}
+.footer #foot4{
+    width: 25%;
+    height: 40px;
+}
+.footer #foot4 div{
+    width: 100%;
+    height: 40px;
+    background-color: #222218;
+    border: 1px solid #0c0b09;
+    border-radius: 20px;
+}
+.footer #foot4 button{
+    width: 30%;
+    height: 40px;
+    background-color: #72740a;
+    border: 1px solid #0c0b09;
+    border-radius: 20px;
+}
+.footer #foot4 #shivam{
+    width: 100px;
+    height: 100px;
+    background-image: url("shivam.jpg");
+    background-size: cover;
+    margin-top: 20px
+}
+.footer #foot4 #abhi{
+    width: 100px;
+    height: 100px;
+    background-image: url("abhi.jpg");
+    background-size: cover;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.discription{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 500px;
+    background-color: #000000;
+    text-align: center;
+    align-content: center;
+}
